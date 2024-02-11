@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Customer Feedback Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Customer Feedback Survey</h1>
+    <p id="description">Please let us know your experience with our service.</p>
+    <form id="survey-form">
+      <fieldset>
+      <label>Is this your first time using this service?</label>
+      <label for="yes"><input type="radio" id="yes" name="yes-no" value="yes" class="inline"> Yes</label>
+
+      <label for="no"><input type="radio" id="no" name="yes-no" value="no" class="inline"> No</label>
+</fieldset>
+
+<fieldset>
+      <label for="dropdown">Would you recommend this your your friends and family?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="">Please select</option>
+        <option value="1"> Yes</option>
+        <option value="2"> No</option>
+      </select>
+      </fieldset>
+      <fieldset>
+        <label>How satisfied are you with the overall Service</label>
+        <label><input type="radio" value="very satisfied" name="satisfication" class="inline"> Very Satisfied </label>
+        <label><input type="radio" value="satisfied" name="satisfication" class="inline"> Satisfied</label>
+        <label><input type="radio" value="undecided" name="satisfication" class="inline"> Undecided</label>
+        <label><input type="radio" value="unsatisfied" name="satisfication" class="inline"> Unsatisfied</label>
+        <label><input type="radio" value="very unsatisfied" name="satisfication" class="inline"> Very Unsatisfied</label>
+      </fieldset>
+      <fieldset>
+        <label>How did you hear about us?</label><label>Tick all that apply</label>
+        <label><input type="checkbox" value="internet" class="inline"> Internet</label>
+        <label><input type="checkbox" value="mouth" class="inline"> Word of mouth</label>
+        <label><input type="checkbox" value="newspaper" class="inline"> Newspaper</label>
+        <label><input type="checkbox" value="others" class="inline"> Others</label>
+      </fieldset>
+<fieldset>
+  <label for="suggestion">Do you have any suggestion to improve our service?</label><textarea id="suggestion" name="suggestion"></textarea>
+</fieldset>
+<fieldset>
+  <label for="name" id="name-label">Full Name: <input type="text" id="name" name="name" value="name" placeholder="fullname" required></label>
+  <label for="email" id="email-label">Email Address: <input type="email" id="email" name="email" placeholder="example@gmail.com" value="email" required> </label>
+<label for="number" id="number-label">Age: <input type="number" id="number" name="number" max="120" min="12" value="number" placeholder="Enter your age"required></label>
+</fieldset>
+<input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+  </html>
